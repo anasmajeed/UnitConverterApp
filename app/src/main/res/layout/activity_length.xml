@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/unit"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <TextView
+        android:id="@+id/feetinput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="198dp"
+        android:text="Feets"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/feettext"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/feetinput"
+        android:layout_alignStart="@+id/feetinput"
+        android:layout_below="@+id/feetinput"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/meterinput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/feettext"
+        android:layout_alignStart="@+id/feettext"
+        android:layout_below="@+id/feettext"
+        android:layout_marginTop="17dp"
+        android:text="Meters"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/metertext"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/meterinput"
+        android:layout_alignStart="@+id/meterinput"
+        android:layout_below="@+id/meterinput"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/mileinput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/metertext"
+        android:layout_alignStart="@+id/metertext"
+        android:layout_below="@+id/metertext"
+        android:layout_marginTop="16dp"
+        android:text="Miles"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/miletext"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mileinput"
+        android:layout_alignStart="@+id/mileinput"
+        android:layout_below="@+id/mileinput"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/yardinput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/miletext"
+        android:layout_alignStart="@+id/miletext"
+        android:layout_below="@+id/miletext"
+        android:layout_marginTop="13dp"
+        android:text="Yards"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/yardtext"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/yardinput"
+        android:layout_alignStart="@+id/yardinput"
+        android:layout_below="@+id/yardinput"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/lengthbackbtn"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_below="@+id/yardtext"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/calculatelengthbtn"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yardtext"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_toLeftOf="@+id/lengthbackbtn"
+        android:layout_toStartOf="@+id/lengthbackbtn"
+        android:text="Calculate" />
+
+    <Button
+        android:id="@+id/resetbtn"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:layout_below="@+id/yardtext"
+        android:layout_toLeftOf="@+id/calculatelengthbtn"
+        android:layout_toStartOf="@+id/calculatelengthbtn"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp" />
+
+</RelativeLayout>

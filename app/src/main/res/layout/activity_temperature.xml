@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/unit"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <EditText
+        android:id="@+id/areainput"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/inputtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/areainput"
+        android:layout_alignLeft="@+id/areainput"
+        android:layout_alignStart="@+id/areainput"
+        android:layout_marginBottom="11dp"
+        android:text="Input"
+        android:textColor="@android:color/white" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/areainput"
+        android:layout_alignLeft="@+id/areainput"
+        android:layout_alignStart="@+id/areainput"
+        android:layout_alignRight="@+id/areainput"
+        android:layout_alignEnd="@+id/areainput"
+        android:id="@+id/radioGroup1">
+
+        <RadioButton
+            android:id="@+id/celciusradiobtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Celcius to Farenheit"
+            android:textColor="@android:color/white" />
+
+        <RadioButton
+            android:id="@+id/farenhietradiobtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Farenhiet to Celcius"
+            android:textColor="@android:color/white" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/calculateareabtn"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup1"
+        android:layout_marginTop="23dp"
+        android:layout_toLeftOf="@+id/backbtn"
+        android:layout_toStartOf="@+id/backbtn"
+        android:text="Calculate" />
+
+    <Button
+        android:id="@+id/backbtn"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calculateareabtn"
+        android:layout_alignBottom="@+id/calculateareabtn"
+        android:layout_alignEnd="@+id/radioGroup1"
+        android:layout_alignRight="@+id/radioGroup1"
+        android:text="Back" />
+</RelativeLayout>
+
+

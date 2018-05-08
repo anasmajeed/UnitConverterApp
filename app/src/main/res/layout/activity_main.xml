@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/unit"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <Button
+        android:id="@+id/areabtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/lengthbtn"
+        android:layout_alignLeft="@+id/lengthbtn"
+        android:layout_alignRight="@+id/lengthbtn"
+        android:layout_alignStart="@+id/lengthbtn"
+        android:layout_below="@+id/lengthbtn"
+        android:layout_marginTop="17dp"
+        android:background="#345678"
+        android:text="Area"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/lengthbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/temperaturebtn"
+        android:layout_alignLeft="@+id/temperaturebtn"
+        android:layout_alignRight="@+id/temperaturebtn"
+        android:layout_alignStart="@+id/temperaturebtn"
+        android:layout_below="@+id/temperaturebtn"
+        android:layout_marginTop="14dp"
+        android:background="#345678"
+        android:text="Length"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/temperaturebtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="209dp"
+        android:background="#345678"
+        android:text="Temperature"
+        android:textColor="@android:color/white" />
+</RelativeLayout>
